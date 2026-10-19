@@ -1,0 +1,1328 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Yesenia Cárdenas | Psicología Profunda Integrativa · Casa Calma</title>
+    <meta name="description" content="Un espacio para encontrarte con aquello que verdaderamente eres y comprenderte para vivir con mayor conciencia y sentido. Atención presencial en Casa Calma (Callao) y modalidad virtual.">
+    <meta name="keywords" content="Yesenia Cárdenas, psicología profunda integrativa, Casa Calma, terapia psicológica adolescentes y adultos, autoconocimiento, psicología Callao, acompañamiento psicológico">
+    <meta name="author" content="Yesenia Cárdenas">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Yesenia Cárdenas | Psicología Profunda Integrativa">
+    <meta property="og:description" content="Hay momentos en los que no necesitamos tener todas las respuestas. Solo un lugar donde comenzar a comprendernos.">
+    <meta property="og:locale" content="es_PE">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Psychologist",
+      "name": "Yesenia Cárdenas - Psicología Profunda Integrativa",
+      "description": "Acompañamiento psicológico profundo e integrativo para adolescentes y adultos. Modalidad presencial en Casa Calma (Callao) y virtual.",
+      "telephone": "+51989649386",
+      "email": "yesmilcaro@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Los Nenúfares 542",
+        "addressLocality": "Callao",
+        "addressRegion": "Lima",
+        "addressCountry": "PE"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "11:00",
+          "closes": "19:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "16:00"
+        }
+      ]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        marfil: '#F5F0E8',      /* 60% Fondo principal - Marfil cálido */
+                        arena: '#E4D8C8',       /* 20% Fondos secundarios - Arena natural */
+                        salvia: '#A9AD99',      /* Acento orgánico - Verde salvia */
+                        tierra: '#725B49',      /* Botones y elementos de presencia - Marrón tierra */
+                        tierraHover: '#5E493A', /* Estado hover para Marrón tierra */
+                        carbon: '#35352F',      /* 10% Textos principales y títulos - Carbón cálido */
+                        arcilla: '#D5B8A4',     /* Acento complementario - Arcilla suave */
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+                        sans: ['"DM Sans"', 'system-ui', 'sans-serif'],
+                    },
+                    maxWidth: {
+                        'editorial': '1160px', /* Rango recomendado: 1120-1200 px */
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Variables y reglas base del Sistema Visual */
+        :root {
+            --color-marfil: #F5F0E8;
+            --color-arena: #E4D8C8;
+            --color-salvia: #A9AD99;
+            --color-tierra: #725B49;
+            --color-carbon: #35352F;
+            --color-arcilla: #D5B8A4;
+        }
+
+        body {
+            background-color: var(--color-marfil);
+            color: var(--color-carbon);
+            font-family: 'DM Sans', sans-serif;
+            font-size: 18px; /* Rango recomendado: 17-19 px */
+            line-height: 1.72; /* Rango recomendado: 1.6-1.8 */
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Jerarquía tipográfica exacta (05. Sistema Visual) */
+        .h1-portada {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(2.5rem, 4.5vw, 3.85rem); /* 52-68 px en escritorio */
+            line-height: 1.12;
+            letter-spacing: -0.01em;
+            color: var(--color-carbon);
+        }
+
+        .h2-seccion {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(2rem, 3.2vw, 2.75rem); /* 36-46 px en escritorio */
+            line-height: 1.18;
+            letter-spacing: -0.01em;
+            color: var(--color-carbon);
+        }
+
+        .h3-subtitulo {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(1.4rem, 2vw, 1.75rem); /* 23-30 px en escritorio */
+            line-height: 1.3;
+            color: var(--color-carbon);
+        }
+
+        .p-lectura {
+            font-family: 'DM Sans', sans-serif;
+            font-size: clamp(1.0625rem, 1.15vw, 1.1875rem); /* 17-19 px */
+            line-height: 1.75; /* 1.6-1.8 */
+            color: rgba(53, 53, 47, 0.88);
+        }
+
+        .ui-meta {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.84rem; /* 13-14 px */
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        /* Espaciado de secciones y márgenes laterales (05. Sistema Visual) */
+        .section-spacing {
+            padding-top: 6rem;    /* ~96px */
+            padding-bottom: 6rem;
+        }
+        @media (min-width: 1024px) {
+            .section-spacing {
+                padding-top: 7rem;    /* 112px (Rango 88-120px) */
+                padding-bottom: 7rem;
+            }
+        }
+
+        .container-editorial {
+            max-width: 1160px; /* 1120-1200 px */
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 1.375rem; /* 22px móvil (Rango 20-24px) */
+            padding-right: 1.375rem;
+        }
+        @media (min-width: 1024px) {
+            .container-editorial {
+                padding-left: 3.5rem; /* 56px escritorio (Rango 48-72px) */
+                padding-right: 3.5rem;
+            }
+        }
+
+        /* Especificaciones de Botones (05. Sistema Visual) */
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 48px; /* 46-48 px */
+            padding: 0 1.75rem;
+            background-color: #725B49; /* Marrón tierra */
+            color: #F5F0E8; /* Texto claro Marfil */
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.9375rem; /* 15px (Rango 14-16px) */
+            font-weight: 500;
+            border-radius: 9999px;
+            transition: background-color 0.25s ease, transform 0.2s ease;
+        }
+        .btn-primary:hover {
+            background-color: #5E493A;
+        }
+        .btn-primary:focus-visible {
+            outline: 2px solid #725B49;
+            outline-offset: 3px;
+        }
+
+        .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 48px; /* 46-48 px */
+            padding: 0 1.75rem;
+            background-color: transparent;
+            color: #725B49; /* Texto marrón tierra */
+            border: 1px solid #725B49; /* Borde fino */
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.9375rem; /* 15px (Rango 14-16px) */
+            font-weight: 500;
+            border-radius: 9999px;
+            transition: background-color 0.25s ease, color 0.25s ease;
+        }
+        .btn-secondary:hover {
+            background-color: rgba(114, 91, 73, 0.08);
+        }
+        .btn-secondary:focus-visible {
+            outline: 2px solid #725B49;
+            outline-offset: 3px;
+        }
+
+        /* Acordeón FAQ suave */
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease, opacity 0.3s ease;
+            opacity: 0;
+        }
+        .faq-item.open .faq-answer {
+            max-height: 360px;
+            opacity: 1;
+        }
+        .faq-item.open .faq-icon {
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body class="selection:bg-salvia/30 selection:text-carbon">
+
+    <header class="sticky top-0 z-50 bg-arena/95 backdrop-blur-md border-b border-tierra/15 transition-colors">
+        <div class="container-editorial min-h-[84px] py-3 flex items-center justify-between gap-6">
+            <!-- Marca Tipográfica Sobria en dos líneas exactas sin desbordarse -->
+            <a href="#inicio" class="group focus:outline-none shrink-0 flex flex-col justify-center">
+                <span class="block font-serif text-[21px] sm:text-[23px] tracking-[0.14em] text-carbon font-medium uppercase leading-tight whitespace-nowrap">
+                    Yesenia Cárdenas
+                </span>
+                <span class="block font-sans text-[10px] sm:text-[10.5px] tracking-[0.16em] text-tierra uppercase mt-1 leading-none whitespace-nowrap">
+                    Psicología Profunda Integrativa
+                </span>
+            </a>
+
+            <!-- Menú de escritorio: 14-16px DM Sans, una sola línea limpia -->
+            <nav aria-label="Navegación principal" class="hidden lg:flex items-center gap-6 xl:gap-7 text-[15px] font-normal text-carbon/85">
+                <a href="#reconocimiento" class="hover:text-tierra transition-colors whitespace-nowrap py-1">El espacio</a>
+                <a href="#acompanamiento" class="hover:text-tierra transition-colors whitespace-nowrap py-1">Mi forma de acompañar</a>
+                <a href="#servicios" class="hover:text-tierra transition-colors whitespace-nowrap py-1">Servicios</a>
+                <a href="#sobre-mi" class="hover:text-tierra transition-colors whitespace-nowrap py-1">Sobre mí</a>
+                <a href="#casa-calma" class="hover:text-tierra transition-colors whitespace-nowrap py-1">Casa Calma</a>
+                <a href="#reflexiones" class="hover:text-tierra transition-colors whitespace-nowrap py-1">Reflexiones</a>
+            </nav>
+
+            <!-- Botón discretamente diferenciado para Primera Sesión / Conversar -->
+            <div class="hidden sm:flex items-center shrink-0">
+                <a href="#primera-sesion" class="inline-flex items-center justify-center min-h-[42px] px-5 rounded-full border border-tierra/60 text-tierra text-[14px] font-medium hover:bg-tierra hover:text-marfil transition-colors whitespace-nowrap">
+                    Primera sesión
+                </a>
+            </div>
+
+            <!-- Botón Menú Móvil (Icono lineal fino) -->
+            <button id="mobile-menu-btn" type="button" aria-label="Abrir menú de navegación" aria-expanded="false" class="lg:hidden p-2.5 text-carbon hover:text-tierra focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                    <path id="menu-icon-path" stroke-linecap="round" stroke-linejoin="round" d="M3.75 7.5h16.5M3.75 12h16.5m-16.5 4.5h16.5"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Menú desplegable móvil -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-arena border-b border-tierra/15 px-6 pt-3 pb-6 space-y-3 text-[16px]">
+            <a href="#reconocimiento" class="mobile-nav-link block py-2 text-carbon border-b border-tierra/10">El espacio</a>
+            <a href="#acompanamiento" class="mobile-nav-link block py-2 text-carbon border-b border-tierra/10">Mi forma de acompañar</a>
+            <a href="#servicios" class="mobile-nav-link block py-2 text-carbon border-b border-tierra/10">Servicios</a>
+            <a href="#primera-sesion" class="mobile-nav-link block py-2 text-carbon border-b border-tierra/10">Primera sesión</a>
+            <a href="#sobre-mi" class="mobile-nav-link block py-2 text-carbon border-b border-tierra/10">Sobre mí</a>
+            <a href="#casa-calma" class="mobile-nav-link block py-2 text-carbon border-b border-tierra/10">Casa Calma</a>
+            <a href="#reflexiones" class="mobile-nav-link block py-2 text-carbon border-b border-tierra/10">Reflexiones</a>
+            <a href="#faq" class="mobile-nav-link block py-2 text-carbon border-b border-tierra/10">Preguntas frecuentes</a>
+            <div class="pt-2">
+                <a href="#contacto" class="mobile-nav-link btn-primary w-full">Conversemos</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="section-spacing bg-marfil">
+            <div class="container-editorial">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+                    
+                    <!-- Columna de texto (7 columnas) -->
+                    <div class="lg:col-span-7">
+                        <p class="ui-meta text-tierra mb-6 flex items-center gap-2.5">
+                            <span class="w-2 h-2 rounded-full bg-salvia inline-block"></span>
+                            Psicología Profunda Integrativa · Casa Calma y Online
+                        </p>
+
+                        <!-- Título principal de portada: Cormorant Garamond 52-68px, sin caligrafía artificial -->
+                        <h1 class="h1-portada font-normal mb-7">
+                            Hay momentos en los que no necesitamos tener todas las respuestas.
+                            <span class="block italic text-tierra font-normal mt-2">
+                                Solo un lugar donde comenzar a comprendernos.
+                            </span>
+                        </h1>
+
+                        <!-- Separación entre título y párrafo: 20-28px -->
+                        <p class="p-lectura max-w-xl mb-9">
+                            Un espacio para encontrarte con aquello que verdaderamente eres y comprenderte para vivir con mayor conciencia y sentido.
+                        </p>
+
+                        <!-- Jerarquía de botones del Sistema Visual -->
+                        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+                            <a href="#reconocimiento" class="btn-primary">
+                                Quiero conocer este espacio
+                            </a>
+                            <a href="#acompanamiento" class="btn-secondary">
+                                Conoce mi forma de acompañar
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Columna de imagen auténtica y cálida (5 columnas) -->
+                    <div class="lg:col-span-5">
+                        <figure class="relative mx-auto max-w-md lg:max-w-none">
+                            <!-- Marco sutil con acento Verde Salvia y Arena -->
+                            <div class="overflow-hidden rounded-2xl bg-arena border border-tierra/15 shadow-sm aspect-[4/5]">
+                                <img 
+                                    src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=1000&q=85" 
+                                    alt="Espacio cálido con luz natural, taza de cerámica y ambiente sereno de reflexión" 
+                                    class="w-full h-full object-cover object-center"
+                                    onerror="this.onerror=null;this.src='https://placehold.co/800x1000/E4D8C8/35352F?text=Espacio+de+Calma';"
+                                >
+                            </div>
+                            <figcaption class="mt-4 flex items-center justify-between text-[13px] text-carbon/70 px-1">
+                                <span>Un refugio libre de juicios ni exigencias</span>
+                                <span class="text-tierra">Adolescentes y adultos</span>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="reconocimiento" class="section-spacing bg-arena/65 border-y border-tierra/10">
+            <div class="container-editorial">
+                <!-- Cabecera editorial centrada con ancho controlado -->
+                <div class="max-w-3xl mx-auto text-center mb-14">
+                    <p class="ui-meta text-tierra mb-4">01 · Reconocimiento</p>
+                    <h2 class="h2-seccion mb-6">
+                        Quizá llegaste aquí porque hay algo dentro de ti que <span class="italic">pide ser escuchado.</span>
+                    </h2>
+                </div>
+
+                <!-- Composición editorial limpia (Sin saturar de iconos simbólicos, priorizando la palabra) -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-4xl mx-auto mb-14">
+                    
+                    <article class="bg-marfil p-8 rounded-2xl border border-tierra/10 flex flex-col justify-between">
+                        <span class="ui-meta text-tierra/75 mb-3">Lo que ya no encaja</span>
+                        <p class="p-lectura text-carbon">
+                            Quizá hay algo en tu vida que ya no quieres seguir viviendo de la misma manera, aunque desde fuera todo parezca estar en orden.
+                        </p>
+                    </article>
+
+                    <article class="bg-marfil p-8 rounded-2xl border border-tierra/10 flex flex-col justify-between">
+                        <span class="ui-meta text-tierra/75 mb-3">Transiciones y vínculos</span>
+                        <p class="p-lectura text-carbon">
+                            Tal vez estás atravesando un cambio, una pérdida, una etapa de confusión o una relación que te está mostrando aspectos de ti que todavía no comprendes.
+                        </p>
+                    </article>
+
+                    <article class="bg-marfil p-8 rounded-2xl border border-tierra/10 flex flex-col justify-between">
+                        <span class="ui-meta text-tierra/75 mb-3">El cansancio de sostener</span>
+                        <p class="p-lectura text-carbon">
+                            Quizá sientes que has aprendido a funcionar, a resolver, a seguir adelante… pero hay una parte de ti que necesita detenerse y bajar la guardia.
+                        </p>
+                    </article>
+
+                    <article class="bg-marfil p-8 rounded-2xl border border-tierra/10 flex flex-col justify-between">
+                        <span class="ui-meta text-tierra/75 mb-3">Búsqueda de sentido</span>
+                        <p class="p-lectura text-carbon">
+                            O simplemente sientes que llegó el momento de mirarte con honestidad y conocerte de una manera diferente, más allá de las exigencias externas.
+                        </p>
+                    </article>
+
+                </div>
+
+                <!-- Frase de cierre del documento oficial -->
+                <div class="max-w-2xl mx-auto text-center pt-4 border-t border-tierra/15">
+                    <p class="font-serif italic text-2xl sm:text-[26px] text-carbon leading-relaxed">
+                        “No tienes que llegar con todo claro. Podemos comenzar desde aquello que hoy está presente en ti.”
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="el-espacio" class="section-spacing bg-marfil">
+            <div class="container-editorial">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+                    
+                    <!-- Imagen serena estilo japandi / natural (5 columnas) -->
+                    <div class="lg:col-span-5 order-2 lg:order-1">
+                        <div class="rounded-2xl overflow-hidden bg-arena border border-tierra/15 aspect-[4/5]">
+                            <img 
+                                src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=900&q=80" 
+                                alt="Luz natural entrando por la ventana sobre texturas de lino y madera" 
+                                class="w-full h-full object-cover"
+                                onerror="this.onerror=null;this.src='https://placehold.co/800x1000/E4D8C8/35352F?text=Presencia+y+Calma';"
+                            >
+                        </div>
+                    </div>
+
+                    <!-- Texto reflexivo sin tarjetas innecesarias (7 columnas) -->
+                    <div class="lg:col-span-7 order-1 lg:order-2">
+                        <p class="ui-meta text-tierra mb-4">02 · El espacio</p>
+                        <h2 class="h2-seccion mb-7">
+                            Un espacio para comprenderte, habitarte y vivir con mayor conciencia.
+                        </h2>
+
+                        <div class="space-y-5 p-lectura max-w-2xl">
+                            <p>
+                                Este espacio nace de una idea sencilla: a veces necesitamos un lugar donde no tengamos que aparentar que todo está bien.
+                            </p>
+                            <p>
+                                Un lugar donde podamos mirar nuestra historia con calma, comprender lo que hemos aprendido, reconocer aquello que seguimos repitiendo y comenzar a preguntarnos qué queremos hacer con todo ello.
+                            </p>
+                            <p>
+                                El acompañamiento no busca darte respuestas hechas ni decirte cómo deberías vivir. Busca abrir un espacio para que puedas encontrarte contigo misma/o y construir, desde ahí, una manera más auténtica de estar en tu vida.
+                            </p>
+                        </div>
+
+                        <!-- Frase destacada con acento Verde Salvia -->
+                        <blockquote class="mt-9 pl-6 border-l-2 border-salvia">
+                            <p class="font-serif italic text-2xl sm:text-[27px] text-tierra leading-snug">
+                                “Comprendernos también es una forma de comenzar a elegir.”
+                            </p>
+                        </blockquote>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="acompanamiento" class="section-spacing bg-arena/55 border-y border-tierra/10">
+            <div class="container-editorial">
+                <div class="max-w-3xl mx-auto">
+                    <p class="ui-meta text-tierra mb-4">03 · Mi forma de acompañar</p>
+                    <h2 class="h2-seccion mb-7">
+                        Psicología Profunda Integrativa
+                    </h2>
+
+                    <div class="space-y-6 p-lectura">
+                        <p>
+                            Mi manera de acompañar parte de mirar a la persona como una <strong class="font-medium text-carbon">historia completa</strong>. No solo aquello que hoy le ocurre, sino también los vínculos que ha construido, lo que aprendió sobre sí misma/o y sobre el mundo, las experiencias que la/o marcaron, sus creencias, sus formas de relacionarse y aquellos patrones que quizá siguen actuando sin que pueda reconocerlos con claridad.
+                        </p>
+                        <p>
+                            Integro distintas miradas de la psicología profunda y humanista, junto con una perspectiva existencial y de sentido.
+                        </p>
+                        <p>
+                            Me interesa especialmente aquello que ocurre entre lo consciente y lo que todavía no logramos ver: nuestros patrones, nuestra sombra, nuestras heridas relacionales, nuestra identidad y las preguntas que aparecen cuando una forma de vivir ya no nos representa.
+                        </p>
+                        <p>
+                            También pueden aparecer el cuerpo, los sueños, los símbolos y otros recursos de exploración del mundo interno cuando tienen sentido para el proceso, siempre desde el rigor psicológico y con los pies en la tierra.
+                        </p>
+                    </div>
+
+                    <!-- Dimensiones de exploración en etiquetas editoriales limpias (Sin iconos esotéricos ni clínicos) -->
+                    <div class="mt-10 pt-8 border-t border-tierra/15">
+                        <p class="ui-meta text-tierra mb-4">Dimensiones que exploramos en el proceso</p>
+                        <div class="flex flex-wrap gap-2.5">
+                            <span class="px-4 py-2 rounded-full bg-marfil border border-tierra/15 text-[15px] text-carbon">Historia emocional y vínculos</span>
+                            <span class="px-4 py-2 rounded-full bg-marfil border border-tierra/15 text-[15px] text-carbon">Patrones inconscientes</span>
+                            <span class="px-4 py-2 rounded-full bg-marfil border border-tierra/15 text-[15px] text-carbon">Heridas relacionales</span>
+                            <span class="px-4 py-2 rounded-full bg-marfil border border-tierra/15 text-[15px] text-carbon">Sombra e identidad</span>
+                            <span class="px-4 py-2 rounded-full bg-marfil border border-tierra/15 text-[15px] text-carbon">Mandatos aprendidos</span>
+                            <span class="px-4 py-2 rounded-full bg-marfil border border-tierra/15 text-[15px] text-carbon">Sentido y elección consciente</span>
+                        </div>
+                    </div>
+
+                    <!-- Frase destacada oficial -->
+                    <div class="mt-10 p-8 rounded-2xl bg-marfil border border-tierra/15">
+                        <p class="font-serif italic text-2xl sm:text-[26px] text-carbon leading-relaxed text-center">
+                            “La transformación comienza cuando lo inconsciente deja de dirigir nuestra vida en silencio.”
+                        </p>
+                    </div>
+
+                    <!-- CTA secundario recomendado en Arquitectura -->
+                    <div class="mt-9 text-center">
+                        <a href="#servicios" class="btn-secondary">
+                            Explora los espacios de acompañamiento
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="proceso" class="section-spacing bg-marfil">
+            <div class="container-editorial">
+                <div class="max-w-3xl mx-auto text-center mb-14">
+                    <p class="ui-meta text-tierra mb-4">04 · El camino terapéutico</p>
+                    <h2 class="h2-seccion mb-6">
+                        No hay una forma única de hacer este camino.
+                    </h2>
+                    <p class="p-lectura">
+                        Cada persona llega con una historia diferente. Por eso, el proceso tampoco tiene que parecerse al de alguien más. Comenzamos por comprender qué estás viviendo hoy, qué te trae hasta aquí y qué necesitas encontrar o transformar. A partir de ahí, vamos profundizando de acuerdo con tu propio ritmo.
+                    </p>
+                </div>
+
+                <!-- Tres momentos visuales (Separación entre tarjetas: 24-32px) -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-7 mb-12">
+                    
+                    <!-- 01 Comprender -->
+                    <div class="bg-arena/45 p-8 rounded-2xl border border-tierra/15 flex flex-col justify-between">
+                        <div>
+                            <span class="font-serif text-3xl text-tierra block mb-3">01</span>
+                            <h3 class="h3-subtitulo font-medium mb-3">Comprender</h3>
+                            <p class="p-lectura text-[16.5px]">
+                                Miramos tu historia, tus vínculos, tus experiencias y aquello que hoy está buscando ser comprendido más allá del síntoma.
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-tierra/10 text-[13px] text-tierra uppercase tracking-wider">
+                            Escucha sin juicio
+                        </div>
+                    </div>
+
+                    <!-- 02 Reconocer -->
+                    <div class="bg-arena/45 p-8 rounded-2xl border border-tierra/15 flex flex-col justify-between">
+                        <div>
+                            <span class="font-serif text-3xl text-tierra block mb-3">02</span>
+                            <h3 class="h3-subtitulo font-medium mb-3">Reconocer</h3>
+                            <p class="p-lectura text-[16.5px]">
+                                Identificamos patrones, creencias, necesidades y formas de relacionarte que quizá han estado presentes durante mucho tiempo.
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-tierra/10 text-[13px] text-tierra uppercase tracking-wider">
+                            Mirada profunda
+                        </div>
+                    </div>
+
+                    <!-- 03 Elegir -->
+                    <div class="bg-arena/45 p-8 rounded-2xl border border-tierra/15 flex flex-col justify-between">
+                        <div>
+                            <span class="font-serif text-3xl text-tierra block mb-3">03</span>
+                            <h3 class="h3-subtitulo font-medium mb-3">Elegir</h3>
+                            <p class="p-lectura text-[16.5px]">
+                                Desde una mayor conciencia de ti, comienzas a construir respuestas propias y decisiones más coherentes con quien eres.
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-tierra/10 text-[13px] text-tierra uppercase tracking-wider">
+                            Autonomía y sentido
+                        </div>
+                    </div>
+
+                </div>
+
+                <p class="text-center font-serif italic text-2xl text-carbon">
+                    “No se trata de convertirte en alguien diferente. Se trata de poder encontrarte con quien eres.”
+                </p>
+            </div>
+        </section>
+
+        <section id="servicios" class="section-spacing bg-arena/65 border-y border-tierra/10">
+            <div class="container-editorial">
+                <div class="max-w-3xl mb-12">
+                    <p class="ui-meta text-tierra mb-4">05 · Espacios de acompañamiento</p>
+                    <h2 class="h2-seccion mb-5">
+                        Formas de recorrer este proceso
+                    </h2>
+                    <p class="p-lectura">
+                        Información clara y transparente para que puedas reconocer con tranquilidad qué modalidad se adapta mejor a tu momento vital.
+                    </p>
+                </div>
+
+                <!-- Tarjetas de Servicios (Separación 24-32px) -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+                    
+                    <!-- Servicio Principal: Acompañamiento Psicológico Individual (7 columnas) -->
+                    <article class="lg:col-span-7 bg-marfil p-8 sm:p-10 rounded-2xl border border-tierra/20 flex flex-col justify-between">
+                        <div>
+                            <div class="flex flex-wrap items-center justify-between gap-2 mb-5">
+                                <span class="ui-meta text-tierra px-3.5 py-1 rounded-full bg-arena">Servicio principal</span>
+                                <span class="text-[14px] text-carbon/75">Adolescentes y Adultos</span>
+                            </div>
+
+                            <h3 class="h3-subtitulo font-medium mb-4">
+                                Acompañamiento psicológico individual
+                            </h3>
+
+                            <p class="p-lectura mb-6">
+                                Un espacio confidencial para adolescentes y adultos que desean comprender con mayor profundidad aquello que están viviendo. Puede ser un momento de crisis, un cambio, una dificultad vincular, una sensación de desconexión, patrones que se repiten o simplemente la necesidad de conocerte mejor.
+                            </p>
+
+                            <!-- Detalles prácticos con iconografía lineal fina -->
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 py-5 border-y border-tierra/15 text-[15px]">
+                                <div class="flex items-start gap-3">
+                                    <svg class="w-5 h-5 text-tierra shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    <div>
+                                        <span class="block font-medium text-carbon">Duración extendida</span>
+                                        <span class="text-carbon/75">Aprox. 70 minutos por encuentro</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <svg class="w-5 h-5 text-tierra shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/>
+                                    </svg>
+                                    <div>
+                                        <span class="block font-medium text-carbon">Modalidad flexible</span>
+                                        <span class="text-carbon/75">Presencial en Casa Calma y Virtual</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+                            <a href="#contacto" onclick="seleccionarMotivo('Acompañamiento individual')" class="btn-primary">
+                                Consultar disponibilidad
+                            </a>
+                            <a href="#primera-sesion" class="btn-secondary">
+                                ¿Cómo es la primera sesión?
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Experiencia Grupal: El Camino de Regreso a Ti (5 columnas) -->
+                    <article class="lg:col-span-5 bg-marfil/80 p-8 sm:p-10 rounded-2xl border border-tierra/15 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between gap-2 mb-5">
+                                <span class="ui-meta text-carbon/75 px-3.5 py-1 rounded-full bg-salvia/30">Experiencia grupal</span>
+                                <span class="text-[14px] text-tierra">Cupos limitados</span>
+                            </div>
+
+                            <h3 class="h3-subtitulo font-medium mb-4">
+                                El Camino de Regreso a Ti
+                            </h3>
+
+                            <p class="p-lectura text-[16.5px] mb-6">
+                                Un espacio grupal de crecimiento interior a través de <strong class="font-medium text-carbon">8 encuentros experienciales</strong> para detenerte, explorar los patrones que se repiten en tu vida, reconocer las máscaras que aprendiste a usar y volver a tu autenticidad.
+                            </p>
+
+                            <ul class="space-y-2.5 text-[15px] text-carbon/85 border-t border-tierra/15 pt-5">
+                                <li class="flex items-center gap-2.5">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-tierra"></span>
+                                    <span>Modalidad presencial · 8 encuentros</span>
+                                </li>
+                                <li class="flex items-center gap-2.5">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-tierra"></span>
+                                    <span>Grupos reducidos en un entorno cuidado</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="mt-8">
+                            <a href="#contacto" onclick="seleccionarMotivo('Experiencia grupal: El Camino de Regreso a Ti')" class="btn-secondary w-full">
+                                Solicitar información del próximo grupo
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- Bloque integrado: PRIMERA SESIÓN (Arquitectura sección 04) -->
+                <div id="primera-sesion" class="mt-12 bg-marfil p-8 sm:p-10 rounded-2xl border border-tierra/15">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                        <div class="lg:col-span-8">
+                            <p class="ui-meta text-tierra mb-2">Para dar el primer paso con tranquilidad</p>
+                            <h3 class="h3-subtitulo font-medium mb-3">
+                                ¿Cómo es una primera sesión?
+                            </h3>
+                            <p class="p-lectura text-[16.5px]">
+                                La primera sesión es un espacio para conocernos y comprender qué estás viviendo hoy, qué te trae hasta aquí y qué esperas de este proceso. <strong class="font-medium text-carbon">No necesitas preparar un discurso ni tener una historia ordenada:</strong> conversamos sin prisa durante aproximadamente 70 minutos para que sientas si esta forma de acompañar resuena contigo.
+                            </p>
+                        </div>
+                        <div class="lg:col-span-4 flex lg:justify-end">
+                            <a href="#contacto" class="btn-primary w-full sm:w-auto">
+                                Conversemos
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre-mi" class="section-spacing bg-marfil">
+            <div class="container-editorial">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+                    
+                    <!-- Columna Fotográfica (5 columnas) -->
+                    <div class="lg:col-span-5">
+                        <div class="rounded-2xl overflow-hidden bg-arena border border-tierra/15 aspect-[4/5] mb-6">
+                            <img 
+                                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=900&q=85" 
+                                alt="Retrato cálido y natural de Yesenia Cárdenas en un espacio con luz natural" 
+                                class="w-full h-full object-cover object-center"
+                                onerror="this.onerror=null;this.src='https://placehold.co/800x1000/E4D8C8/35352F?text=Yesenia+C%C3%A1rdenas';"
+                            >
+                        </div>
+                        <div class="p-6 rounded-2xl bg-arena/60 border border-tierra/10">
+                            <p class="font-serif italic text-xl text-carbon leading-relaxed">
+                                “Creo profundamente que cada persona posee una verdad única. El autoconocimiento es el camino para volver a ella.”
+                            </p>
+                            <p class="ui-meta text-tierra mt-3">Yesenia Cárdenas</p>
+                        </div>
+                    </div>
+
+                    <!-- Columna Narrativa (7 columnas) -->
+                    <div class="lg:col-span-7">
+                        <p class="ui-meta text-tierra mb-4">06 · Sobre mí</p>
+                        <h2 class="h2-seccion mb-6">
+                            Soy Yesenia Cárdenas.
+                        </h2>
+
+                        <div class="space-y-5 p-lectura">
+                            <p>
+                                Acompaño procesos de autoconocimiento y comprensión interior desde una mirada profunda, integrativa y humana.
+                            </p>
+                            <p>
+                                Mi interés por la psicología nació de una pregunta que, de distintas maneras, me ha acompañado durante muchos años:
+                            </p>
+                            <blockquote class="py-3 pl-5 border-l-2 border-tierra font-serif italic text-2xl text-carbon">
+                                ¿Qué ocurre dentro de nosotros que hace que repitamos, elijamos, temamos o nos relacionemos de determinadas maneras?
+                            </blockquote>
+                            <p>
+                                Con el tiempo comprendí que muchas de nuestras respuestas actuales tienen una historia. Por eso, en mi forma de acompañar, no me interesa quedarme únicamente en lo que ocurre en la superficie. Me interesa conocer a la persona, su historia, sus vínculos, sus aprendizajes y también aquello que quizá todavía no ha podido poner en palabras.
+                            </p>
+                            <p>
+                                Mi identidad integra la psicología profunda, la reflexión filosófica y una dimensión espiritual entendida desde la experiencia humana y con los pies en la tierra. Creo profundamente en la importancia de acompañar sin imponer respuestas:
+                            </p>
+                        </div>
+
+                        <!-- Tres pilares de actitud clínica -->
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 my-8">
+                            <div class="p-5 rounded-xl bg-arena/45 border border-tierra/15">
+                                <span class="block font-serif text-xl font-medium text-carbon mb-1">Escuchar</span>
+                                <span class="text-[14px] text-carbon/75">antes de interpretar.</span>
+                            </div>
+                            <div class="p-5 rounded-xl bg-arena/45 border border-tierra/15">
+                                <span class="block font-serif text-xl font-medium text-carbon mb-1">Preguntar</span>
+                                <span class="text-[14px] text-carbon/75">antes de concluir.</span>
+                            </div>
+                            <div class="p-5 rounded-xl bg-arena/45 border border-tierra/15">
+                                <span class="block font-serif text-xl font-medium text-carbon mb-1">Respetar</span>
+                                <span class="text-[14px] text-carbon/75">el ritmo de cada proceso.</span>
+                            </div>
+                        </div>
+
+                        <p class="p-lectura mb-6">
+                            Y, sobre todo, en recordar que comprendernos no significa quedarnos atrapados en nuestra historia, sino poder relacionarnos con ella de una manera diferente.
+                        </p>
+
+                        <p class="font-serif italic text-2xl text-tierra">
+                            “Acompaño el proceso de comprenderte, reconocerte y habitar tu vida desde un lugar más auténtico.”
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="casa-calma" class="section-spacing bg-arena/65 border-y border-tierra/10">
+            <div class="container-editorial">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <div class="lg:col-span-6">
+                        <p class="ui-meta text-tierra mb-3">07 · Espacio presencial</p>
+                        <h2 class="h2-seccion mb-2">Casa Calma</h2>
+                        <p class="h3-subtitulo italic text-tierra mb-6">Un espacio para recordar quién eres.</p>
+
+                        <div class="space-y-5 p-lectura">
+                            <p>
+                                Casa Calma es el espacio físico donde suceden parte de los procesos presenciales. Quise crear un lugar que se sintiera diferente a un consultorio tradicional.
+                            </p>
+                            <p>
+                                Un espacio cálido, sencillo y tranquilo. Un lugar donde puedas sentirte cómoda/o, respirar y permitirte estar presente.
+                            </p>
+                            <p>
+                                Porque el espacio también acompaña. Y a veces, poder sentarnos sin prisa, en un lugar donde no tenemos que demostrar nada, ya es una pequeña forma de comenzar.
+                            </p>
+                        </div>
+
+                        <div class="mt-8 pt-6 border-t border-tierra/15 flex flex-wrap items-center justify-between gap-4">
+                            <div>
+                                <p class="font-serif italic text-xl text-carbon">“Un espacio de encuentro, escucha y libertad para ser.”</p>
+                                <p class="text-[14px] text-carbon/75 mt-1">Av. Los Nenúfares 542 – Callao</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-6">
+                        <div class="grid grid-cols-2 gap-5">
+                            <div class="rounded-2xl overflow-hidden bg-marfil border border-tierra/15 aspect-[4/5]">
+                                <img 
+                                    src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=700&q=80" 
+                                    alt="Interior cálido de estilo natural con tonos tierra y luz suave en Casa Calma" 
+                                    class="w-full h-full object-cover"
+                                    onerror="this.onerror=null;this.src='https://placehold.co/600x750/F5F0E8/35352F?text=Casa+Calma';"
+                                >
+                            </div>
+                            <div class="rounded-2xl overflow-hidden bg-marfil border border-tierra/15 aspect-[4/5] mt-8">
+                                <img 
+                                    src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=700&q=80" 
+                                    alt="Rincón de lectura y conversación tranquila con materiales orgánicos" 
+                                    class="w-full h-full object-cover"
+                                    onerror="this.onerror=null;this.src='https://placehold.co/600x750/E4D8C8/35352F?text=Espacio+C%C3%A1lido';"
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="reflexiones" class="section-spacing bg-marfil">
+            <div class="container-editorial">
+                <div class="max-w-3xl mx-auto text-center mb-10">
+                    <p class="ui-meta text-tierra mb-3">08 · Reflexiones</p>
+                    <h2 class="h2-seccion mb-5">Algunas preguntas para volver a ti.</h2>
+                    <p class="p-lectura">
+                        Este espacio reúne reflexiones sobre aquello que muchas veces vivimos sin detenernos a mirar. No encontrarás respuestas definitivas. Encontrarás preguntas, ideas y pequeñas pausas para observarte.
+                    </p>
+                </div>
+
+                <!-- 7 Categorías oficiales como filtros limpios -->
+                <div class="flex flex-wrap justify-center gap-2.5 mb-12" role="tablist" aria-label="Categorías de reflexiones">
+                    <button type="button" onclick="filtrarReflexiones('todas', this)" class="filtro-btn px-4 py-2 rounded-full text-[14px] font-medium bg-tierra text-marfil transition-colors">
+                        Todas
+                    </button>
+                    <button type="button" onclick="filtrarReflexiones('vinculos', this)" class="filtro-btn px-4 py-2 rounded-full text-[14px] font-normal bg-arena/60 text-carbon hover:bg-arena transition-colors">
+                        Vínculos y límites
+                    </button>
+                    <button type="button" onclick="filtrarReflexiones('identidad', this)" class="filtro-btn px-4 py-2 rounded-full text-[14px] font-normal bg-arena/60 text-carbon hover:bg-arena transition-colors">
+                        Identidad y autenticidad
+                    </button>
+                    <button type="button" onclick="filtrarReflexiones('patrones', this)" class="filtro-btn px-4 py-2 rounded-full text-[14px] font-normal bg-arena/60 text-carbon hover:bg-arena transition-colors">
+                        Patrones y aprendizajes
+                    </button>
+                    <button type="button" onclick="filtrarReflexiones('cambio', this)" class="filtro-btn px-4 py-2 rounded-full text-[14px] font-normal bg-arena/60 text-carbon hover:bg-arena transition-colors">
+                        Miedo y cambio
+                    </button>
+                    <button type="button" onclick="filtrarReflexiones('sentido', this)" class="filtro-btn px-4 py-2 rounded-full text-[14px] font-normal bg-arena/60 text-carbon hover:bg-arena transition-colors">
+                        Sentido y propósito
+                    </button>
+                    <button type="button" onclick="filtrarReflexiones('interno', this)" class="filtro-btn px-4 py-2 rounded-full text-[14px] font-normal bg-arena/60 text-carbon hover:bg-arena transition-colors">
+                        Mundo interno
+                    </button>
+                    <button type="button" onclick="filtrarReflexiones('cotidiana', this)" class="filtro-btn px-4 py-2 rounded-full text-[14px] font-normal bg-arena/60 text-carbon hover:bg-arena transition-colors">
+                        Psicología y vida cotidiana
+                    </button>
+                </div>
+
+                <!-- Tarjetas de Reflexiones (Espaciado 24-32px) -->
+                <div id="grid-reflexiones" class="grid grid-cols-1 md:grid-cols-3 gap-7">
+                    
+                    <article data-cat="identidad" class="reflexion-card bg-arena/40 p-8 rounded-2xl border border-tierra/15 flex flex-col justify-between">
+                        <div>
+                            <span class="ui-meta text-tierra block mb-3">Identidad y autenticidad</span>
+                            <h3 class="h3-subtitulo font-medium mb-3">
+                                Cuando ser fuerte se vuelve la única manera de estar
+                            </h3>
+                            <p class="p-lectura text-[16px]">
+                                A veces aprendemos tan temprano a poder con todo que olvidamos cómo se siente descansar en la presencia de otro sin sentir que fallamos.
+                            </p>
+                        </div>
+                        <button type="button" onclick="abrirLectura('identidad')" class="mt-6 inline-flex items-center gap-2 text-[14px] font-medium text-tierra hover:underline">
+                            Leer reflexión
+                            <span aria-hidden="true">→</span>
+                        </button>
+                    </article>
+
+                    <article data-cat="vinculos" class="reflexion-card bg-arena/40 p-8 rounded-2xl border border-tierra/15 flex flex-col justify-between">
+                        <div>
+                            <span class="ui-meta text-tierra block mb-3">Vínculos y límites</span>
+                            <h3 class="h3-subtitulo font-medium mb-3">
+                                ¿Por qué a veces poner un límite se siente como perder el afecto?
+                            </h3>
+                            <p class="p-lectura text-[16px]">
+                                Si en nuestra historia decir “no” estuvo asociado a distancia o desaprobar, hoy nuestra culpa al priorizarnos guarda una memoria que pide comprensión.
+                            </p>
+                        </div>
+                        <button type="button" onclick="abrirLectura('vinculos')" class="mt-6 inline-flex items-center gap-2 text-[14px] font-medium text-tierra hover:underline">
+                            Leer reflexión
+                            <span aria-hidden="true">→</span>
+                        </button>
+                    </article>
+
+                    <article data-cat="patrones" class="reflexion-card bg-arena/40 p-8 rounded-2xl border border-tierra/15 flex flex-col justify-between">
+                        <div>
+                            <span class="ui-meta text-tierra block mb-3">Patrones y aprendizajes</span>
+                            <h3 class="h3-subtitulo font-medium mb-3">
+                                Lo que se repite no busca castigarte, busca ser comprendido
+                            </h3>
+                            <p class="p-lectura text-[16px]">
+                                Detrás de cada elección que parece llevarnos al mismo lugar suele habitar una parte nuestra que sigue intentando resolver una herida antigua.
+                            </p>
+                        </div>
+                        <button type="button" onclick="abrirLectura('patrones')" class="mt-6 inline-flex items-center gap-2 text-[14px] font-medium text-tierra hover:underline">
+                            Leer reflexión
+                            <span aria-hidden="true">→</span>
+                        </button>
+                    </article>
+
+                </div>
+
+                <!-- Visor de lectura serena desplegable -->
+                <div id="visor-reflexion" class="hidden mt-8 p-8 sm:p-10 rounded-2xl bg-arena/70 border border-tierra/20 max-w-3xl mx-auto">
+                    <div class="flex items-start justify-between gap-4 mb-4">
+                        <span id="visor-categoria" class="ui-meta text-tierra">Reflexión</span>
+                        <button type="button" onclick="cerrarLectura()" class="text-[14px] text-carbon/70 hover:text-carbon">Cerrar ✕</button>
+                    </div>
+                    <h3 id="visor-titulo" class="h3-subtitulo font-medium mb-4"></h3>
+                    <div id="visor-cuerpo" class="space-y-4 p-lectura text-[16.5px]"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonios" class="section-spacing bg-arena/55 border-y border-tierra/10">
+            <div class="container-editorial">
+                <div class="max-w-3xl mx-auto text-center mb-12">
+                    <p class="ui-meta text-tierra mb-3">09 · Experiencias</p>
+                    <h2 class="h2-seccion">
+                        Lo que algunas personas han encontrado en este espacio.
+                    </h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-7">
+                    <blockquote class="bg-marfil p-8 rounded-2xl border border-tierra/15 flex flex-col justify-between">
+                        <p class="p-lectura text-[16px] italic mb-6">
+                            “Llegué sintiendo que no sabía ni por dónde empezar a explicar lo que me pasaba. Por primera vez sentí que no tenía que dar una versión ordenada de mí, sino que podía ir descubriéndome con calma.”
+                        </p>
+                        <footer class="text-[13px] text-tierra uppercase tracking-wider border-t border-tierra/10 pt-4">
+                            Proceso individual · Adulto
+                        </footer>
+                    </blockquote>
+
+                    <blockquote class="bg-marfil p-8 rounded-2xl border border-tierra/15 flex flex-col justify-between">
+                        <p class="p-lectura text-[16px] italic mb-6">
+                            “Entender de dónde venían mis miedos en mis relaciones me permitió dejar de culparme tanto. No recibí recetas rápidas, sino una mirada profunda que me devolvió la capacidad de elegir.”
+                        </p>
+                        <footer class="text-[13px] text-tierra uppercase tracking-wider border-t border-tierra/10 pt-4">
+                            Proceso individual · Modalidad virtual
+                        </footer>
+                    </blockquote>
+
+                    <blockquote class="bg-marfil p-8 rounded-2xl border border-tierra/15 flex flex-col justify-between">
+                        <p class="p-lectura text-[16px] italic mb-6">
+                            “Casa Calma hace honor a su nombre. Desde que cruzas la puerta sientes que el ruido de afuera baja y que estás ante alguien que realmente te escucha con presencia y respeto.”
+                        </p>
+                        <footer class="text-[13px] text-tierra uppercase tracking-wider border-t border-tierra/10 pt-4">
+                            Proceso presencial · Casa Calma
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="section-spacing bg-marfil">
+            <div class="container-editorial">
+                <div class="max-w-3xl mx-auto">
+                    <div class="text-center mb-12">
+                        <p class="ui-meta text-tierra mb-3">10 · Preguntas frecuentes</p>
+                        <h2 class="h2-seccion">Quizá te estés preguntando…</h2>
+                    </div>
+
+                    <div class="divide-y divide-tierra/15 border-y border-tierra/15">
+                        
+                        <div class="faq-item py-5">
+                            <button type="button" onclick="toggleFaq(this)" class="w-full flex items-center justify-between text-left gap-4 py-1 focus:outline-none">
+                                <span class="h3-subtitulo font-medium text-[21px]">¿Tengo que saber exactamente qué me pasa para comenzar?</span>
+                                <span class="faq-icon text-tierra text-2xl font-light transition-transform duration-300">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p class="p-lectura pt-3 text-[16.5px]">
+                                    No. No necesitas llegar con un diagnóstico ni con una explicación clara. Podemos comenzar justamente desde aquello que hoy te resulta difícil comprender.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item py-5">
+                            <button type="button" onclick="toggleFaq(this)" class="w-full flex items-center justify-between text-left gap-4 py-1 focus:outline-none">
+                                <span class="h3-subtitulo font-medium text-[21px]">¿La primera sesión es diferente?</span>
+                                <span class="faq-icon text-tierra text-2xl font-light transition-transform duration-300">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p class="p-lectura pt-3 text-[16.5px]">
+                                    La primera sesión es un espacio para conocernos y comprender qué estás viviendo, qué te trae hasta aquí y qué esperas de este proceso. No necesitas preparar una historia perfecta.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item py-5">
+                            <button type="button" onclick="toggleFaq(this)" class="w-full flex items-center justify-between text-left gap-4 py-1 focus:outline-none">
+                                <span class="h3-subtitulo font-medium text-[21px]">¿Cuánto dura una sesión?</span>
+                                <span class="faq-icon text-tierra text-2xl font-light transition-transform duration-300">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p class="p-lectura pt-3 text-[16.5px]">
+                                    Cada encuentro tiene una duración aproximada de 70 minutos.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item py-5">
+                            <button type="button" onclick="toggleFaq(this)" class="w-full flex items-center justify-between text-left gap-4 py-1 focus:outline-none">
+                                <span class="h3-subtitulo font-medium text-[21px]">¿Trabajas con adolescentes?</span>
+                                <span class="faq-icon text-tierra text-2xl font-light transition-transform duration-300">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p class="p-lectura pt-3 text-[16.5px]">
+                                    Sí. El acompañamiento está dirigido a adolescentes y adultos.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item py-5">
+                            <button type="button" onclick="toggleFaq(this)" class="w-full flex items-center justify-between text-left gap-4 py-1 focus:outline-none">
+                                <span class="h3-subtitulo font-medium text-[21px]">¿Las sesiones pueden ser virtuales?</span>
+                                <span class="faq-icon text-tierra text-2xl font-light transition-transform duration-300">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p class="p-lectura pt-3 text-[16.5px]">
+                                    Sí, según disponibilidad.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item py-5">
+                            <button type="button" onclick="toggleFaq(this)" class="w-full flex items-center justify-between text-left gap-4 py-1 focus:outline-none">
+                                <span class="h3-subtitulo font-medium text-[21px]">¿Tengo que continuar durante mucho tiempo?</span>
+                                <span class="faq-icon text-tierra text-2xl font-light transition-transform duration-300">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p class="p-lectura pt-3 text-[16.5px]">
+                                    Cada proceso tiene su propio ritmo. La duración depende de lo que estés atravesando, de tus necesidades y de los objetivos que vayamos reconociendo juntos.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item py-5">
+                            <button type="button" onclick="toggleFaq(this)" class="w-full flex items-center justify-between text-left gap-4 py-1 focus:outline-none">
+                                <span class="h3-subtitulo font-medium text-[21px]">¿Y si no sé si este espacio es para mí?</span>
+                                <span class="faq-icon text-tierra text-2xl font-light transition-transform duration-300">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p class="p-lectura pt-3 text-[16.5px]">
+                                    También puedes comenzar preguntando. A veces no necesitamos estar seguros para dar el primer paso.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="section-spacing bg-arena/65 border-t border-tierra/15">
+            <div class="container-editorial">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-start">
+                    
+                    <!-- Columna izquierda: Invitación y datos unificados con iconos lineales finos (5 columnas) -->
+                    <div class="lg:col-span-5">
+                        <p class="ui-meta text-tierra mb-3">11 · Contacto</p>
+                        <h2 class="h2-seccion mb-5">
+                            Podemos comenzar por una conversación.
+                        </h2>
+                        <p class="p-lectura mb-4">
+                            Si algo de lo que encontraste aquí resonó contigo y quieres conocer un poco más sobre el proceso, puedes escribirme.
+                        </p>
+                        <p class="p-lectura mb-8">
+                            No necesitas tener las palabras exactas. Cuéntame brevemente qué estás viviendo y podremos orientarnos desde ahí.
+                        </p>
+
+                        <!-- Tarjeta de información práctica y ubicación integrada sin duplicidades -->
+                        <div class="bg-marfil p-7 rounded-2xl border border-tierra/15 space-y-5 text-[15px]">
+                            
+                            <div class="flex items-start gap-3.5">
+                                <svg class="w-5 h-5 text-tierra shrink-0 mt-1" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/>
+                                </svg>
+                                <div>
+                                    <span class="block font-medium text-carbon">Atención presencial y virtual</span>
+                                    <span class="text-carbon/80 block">Casa Calma · Av. Los Nenúfares 542, Callao</span>
+                                    <a href="https://www.google.com/maps/search/?api=1&query=Av.+Los+Nenufares+542+Callao+Peru" target="_blank" rel="noopener noreferrer" class="text-[13px] text-tierra hover:underline inline-block mt-1">
+                                        Ver ubicación en Google Maps →
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3.5 pt-4 border-t border-tierra/10">
+                                <svg class="w-5 h-5 text-tierra shrink-0 mt-1" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <div>
+                                    <span class="block font-medium text-carbon">Horario de atención</span>
+                                    <span class="text-carbon/80 block">Lunes a Viernes: 11:00 a.m. a 7:00 p.m.</span>
+                                    <span class="text-carbon/80 block">Sábados: 9:00 a.m. a 4:00 p.m.</span>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3.5 pt-4 border-t border-tierra/10">
+                                <svg class="w-5 h-5 text-tierra shrink-0 mt-1" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/>
+                                </svg>
+                                <div>
+                                    <span class="block font-medium text-carbon">Canales directos</span>
+                                    <a href="https://wa.me/51989649386" target="_blank" rel="noopener noreferrer" class="text-carbon/80 hover:text-tierra block">WhatsApp: +51 989 649 386</a>
+                                    <a href="mailto:yesmilcaro@gmail.com" class="text-carbon/80 hover:text-tierra block">Correo: yesmilcaro@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="pt-4 border-t border-tierra/10 flex items-center justify-between">
+                                <span class="text-[13px] text-carbon/70 uppercase tracking-wider">Redes sociales</span>
+                                <div class="flex items-center gap-4 text-[14px] text-tierra font-medium">
+                                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="hover:underline">Instagram</a>
+                                    <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="hover:underline">TikTok</a>
+                                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="hover:underline">Facebook</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Columna derecha: Formulario único y claro con un solo CTA principal (7 columnas) -->
+                    <div class="lg:col-span-7">
+                        <div class="bg-marfil p-8 sm:p-10 rounded-2xl border border-tierra/20">
+                            <h3 class="h3-subtitulo font-medium mb-2">Escríbeme un mensaje</h3>
+                            <p class="text-[15px] text-carbon/75 mb-7">
+                                Tu mensaje es confidencial y lo recibo personalmente para orientarte.
+                            </p>
+
+                            <form id="contact-form" onsubmit="enviarMensaje(event)" class="space-y-5">
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                    <div>
+                                        <label for="nombre" class="block text-[13px] uppercase tracking-wider text-carbon/80 mb-2">¿Cómo te llamas?</label>
+                                        <input type="text" id="nombre" required placeholder="Tu nombre" class="w-full px-4 py-3 rounded-xl bg-arena/35 border border-tierra/20 text-carbon placeholder-carbon/45 text-[15px] focus:outline-none focus:border-tierra">
+                                    </div>
+                                    <div>
+                                        <label for="medio-contacto" class="block text-[13px] uppercase tracking-wider text-carbon/80 mb-2">Tu WhatsApp o Correo</label>
+                                        <input type="text" id="medio-contacto" required placeholder="989... o correo@ejemplo.com" class="w-full px-4 py-3 rounded-xl bg-arena/35 border border-tierra/20 text-carbon placeholder-carbon/45 text-[15px] focus:outline-none focus:border-tierra">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label for="espacio-interes" class="block text-[13px] uppercase tracking-wider text-carbon/80 mb-2">Modalidad o espacio de interés</label>
+                                    <select id="espacio-interes" class="w-full px-4 py-3 rounded-xl bg-arena/35 border border-tierra/20 text-carbon text-[15px] focus:outline-none focus:border-tierra">
+                                        <option value="Acompañamiento individual presencial (Casa Calma)">Acompañamiento individual presencial (Casa Calma)</option>
+                                        <option value="Acompañamiento individual virtual">Acompañamiento individual virtual</option>
+                                        <option value="Experiencia grupal: El Camino de Regreso a Ti">Experiencia grupal: El Camino de Regreso a Ti</option>
+                                        <option value="Quiero orientación para dar el primer paso">No estoy segura/o aún, quiero orientación</option>
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <label for="mensaje" class="block text-[13px] uppercase tracking-wider text-carbon/80 mb-2">Cuéntame brevemente qué estás viviendo hoy</label>
+                                    <textarea id="mensaje" rows="4" required placeholder="Escribe con tranquilidad, no necesitas tener las palabras exactas..." class="w-full px-4 py-3 rounded-xl bg-arena/35 border border-tierra/20 text-carbon placeholder-carbon/45 text-[15px] focus:outline-none focus:border-tierra"></textarea>
+                                </div>
+
+                                <!-- Un único botón principal por sección (Especificación 05. Sistema Visual) -->
+                                <div class="pt-2 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                                    <button type="submit" class="btn-primary">
+                                        Quiero conversar
+                                    </button>
+                                    <a href="https://wa.me/51989649386?text=Hola%20Yesenia,%20visit%C3%A9%20tu%20espacio%20web%20y%20me%20gustar%C3%ADa%20conversar%20sobre%20el%20acompa%C3%B1amiento." target="_blank" rel="noopener noreferrer" class="text-[14px] text-tierra hover:underline text-center sm:text-right">
+                                        O abrir WhatsApp directamente →
+                                    </a>
+                                </div>
+                            </form>
+
+                            <!-- Confirmación de envío sin usar alert() -->
+                            <div id="confirmacion-envio" class="hidden mt-6 p-5 rounded-xl bg-salvia/25 border border-salvia text-[15px] text-carbon">
+                                <p class="font-medium mb-1">Gracias por escribir. Hemos preparado tu mensaje.</p>
+                                <p class="text-carbon/80 text-[14px]">Se abrirá WhatsApp para que podamos conversar directamente, o si prefieres también puedes enviarlo a <a href="mailto:yesmilcaro@gmail.com" class="underline text-tierra">yesmilcaro@gmail.com</a>.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-marfil border-t border-tierra/15 py-16">
+        <div class="container-editorial text-center max-w-3xl mx-auto">
+            <p class="font-serif text-2xl sm:text-3xl text-carbon mb-2">
+                Un espacio para habitarte con más conciencia.
+            </p>
+            <p class="p-lectura text-[16.5px] mb-2">
+                Acompañarte a comprenderte y habitar tu propia historia.
+            </p>
+            <p class="font-serif italic text-xl text-tierra mb-8">
+                “Cuando empiezas a habitarte, algo en tu manera de vivir cambia.”
+            </p>
+
+            <a href="#inicio" class="inline-flex items-center gap-2 text-[14px] font-medium text-tierra hover:underline mb-10">
+                Conocer el espacio ↑
+            </a>
+
+            <div class="pt-8 border-t border-tierra/15 flex flex-col sm:flex-row items-center justify-between gap-4 text-[13px] text-carbon/70">
+                <span>© Yesenia Cárdenas · Psicología Profunda Integrativa</span>
+                <span>Casa Calma · Av. Los Nenúfares 542, Callao · Lima, Perú</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Control de Menú Móvil
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+        if (mobileBtn && mobileMenu) {
+            mobileBtn.addEventListener('click', () => {
+                const isHidden = mobileMenu.classList.contains('hidden');
+                mobileMenu.classList.toggle('hidden');
+                mobileBtn.setAttribute('aria-expanded', isHidden ? 'true' : 'false');
+            });
+
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    mobileBtn.setAttribute('aria-expanded', 'false');
+                });
+            });
+        }
+
+        // Acordeón de Preguntas Frecuentes
+        function toggleFaq(button) {
+            const item = button.closest('.faq-item');
+            const isOpen = item.classList.contains('open');
+            document.querySelectorAll('.faq-item').forEach(el => el.classList.remove('open'));
+            if (!isOpen) {
+                item.classList.add('open');
+            }
+        }
+
+        // Filtro y lectura de Reflexiones
+        const textosReflexiones = {
+            identidad: {
+                categoria: 'Identidad y autenticidad',
+                titulo: 'Cuando ser fuerte se vuelve la única manera de estar',
+                cuerpo: [
+                    'Muchas personas llegan a consulta sintiendo un agotamiento que no se resuelve únicamente descansando el fin de semana. Es el cansancio de sostener un personaje que siempre puede, que siempre comprende y que nunca necesita nada.',
+                    'En algún momento de nuestra historia, ser autosuficientes fue una forma inteligente de protegernos. Pero comprender esa historia nos permite empezar a elegir cuándo queremos sostener y cuándo necesitamos simplemente habitar nuestra vulnerabilidad sin miedo al juicio.'
+                ]
+            },
+            vinculos: {
+                categoria: 'Vínculos y límites',
+                titulo: '¿Por qué a veces poner un límite se siente como perder el afecto?',
+                cuerpo: [
+                    'Cuando aprendimos que para ser queridos debíamos adaptarnos a lo que otros esperaban de nosotros, cualquier gesto de autonomía despierta una alarma interna.',
+                    'Mirar nuestros vínculos desde la psicología profunda no consiste en aprender frases hechas para poner límites, sino en comprender qué temor se activa dentro de nosotros cuando nos elegimos.'
+                ]
+            },
+            patrones: {
+                categoria: 'Patrones y aprendizajes',
+                titulo: 'Lo que se repite no busca castigarte, busca ser comprendido',
+                cuerpo: [
+                    'A veces nos preguntamos por qué volvemos a encontrarnos en dinámicas muy parecidas aunque cambiemos de lugar, de trabajo o de relación.',
+                    'La transformación comienza cuando dejamos de pelear únicamente contra el síntoma y empezamos a escuchar qué historia inconsciente sigue buscando ser reconocida.'
+                ]
+            }
+        };
+
+        function abrirLectura(clave) {
+            const data = textosReflexiones[clave];
+            if (!data) return;
+            const visor = document.getElementById('visor-reflexion');
+            document.getElementById('visor-categoria').textContent = data.categoria;
+            document.getElementById('visor-titulo').textContent = data.titulo;
+            document.getElementById('visor-cuerpo').innerHTML = data.cuerpo.map(p => `<p>${p}</p>`).join('');
+            visor.classList.remove('hidden');
+            visor.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        function cerrarLectura() {
+            document.getElementById('visor-reflexion').classList.add('hidden');
+        }
+
+        function filtrarReflexiones(categoria, botonActivo) {
+            document.querySelectorAll('.filtro-btn').forEach(btn => {
+                btn.classList.remove('bg-tierra', 'text-marfil', 'font-medium');
+                btn.classList.add('bg-arena/60', 'text-carbon', 'font-normal');
+            });
+            botonActivo.classList.remove('bg-arena/60', 'text-carbon', 'font-normal');
+            botonActivo.classList.add('bg-tierra', 'text-marfil', 'font-medium');
+
+            const tarjetas = document.querySelectorAll('.reflexion-card');
+            tarjetas.forEach(card => {
+                const catCard = card.getAttribute('data-cat');
+                if (categoria === 'todas' || catCard === categoria || ['cambio', 'sentido', 'interno', 'cotidiana'].includes(categoria)) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        }
+
+        // Preselección de motivo en Contacto
+        function seleccionarMotivo(motivo) {
+            const select = document.getElementById('espacio-interes');
+            if (!select) return;
+            for (let i = 0; i < select.options.length; i++) {
+                if (select.options[i].value.includes(motivo)) {
+                    select.selectedIndex = i;
+                    break;
+                }
+            }
+        }
+
+        // Envío de Formulario conectado a WhatsApp oficial 989649386
+        function enviarMensaje(event) {
+            event.preventDefault();
+            const nombre = document.getElementById('nombre').value.trim();
+            const contacto = document.getElementById('medio-contacto').value.trim();
+            const interes = document.getElementById('espacio-interes').value;
+            const mensaje = document.getElementById('mensaje').value.trim();
+
+            const textoWhatsApp = `Hola Yesenia, mi nombre es ${nombre} (${contacto}). Me interesa: ${interes}. Quería comentarte brevemente: ${mensaje}`;
+            const url = `https://wa.me/51989649386?text=${encodeURIComponent(textoWhatsApp)}`;
+
+            document.getElementById('confirmacion-envio').classList.remove('hidden');
+            window.open(url, '_blank', 'noopener,noreferrer');
+        }
+    </script>
+</body>
+</html>
